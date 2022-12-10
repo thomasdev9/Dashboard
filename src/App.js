@@ -8,6 +8,7 @@ import Aside from './components/Aside/Aside';
 import RightBar from "./components/RightBar"
 import Customers from './components/Customers/Customers';
 import Orders from './components/Orders/Orders';
+import Settings from './components/Settings/Settings';
 
 const Wrapper = styled.div`
   display: grid;
@@ -30,7 +31,8 @@ function App() {
           {/* <Customers /> */}
           {/* <Dashboard theme={theme}/>
           <RightBar /> */}
-          <Orders />
+          {/* <Orders /> */}
+          <Settings />
         </Wrapper>
       </ThemeProvider>
     </div>
