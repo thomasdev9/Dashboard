@@ -22,6 +22,7 @@ const SettingsWrapper = styled.div`
 `
 
 const SettingsController = styled.div`
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: ${props => props.theme.colors.white};
@@ -56,7 +57,7 @@ const SettingsForm = styled.form`
     align-items: center;
     justify-content: flex-start;
     padding: 20px 30px;
-    border: 1px solid ${props => props.theme.colors.light};\
+    border: 1px solid ${props => props.theme.colors.infoLight};
     border-radius: 15px;
     width: 100%;
 `
@@ -120,12 +121,14 @@ const SettingsTextArea = styled.textarea`
     }
 `
 
-const SettingsButtonWrapper = styled.div`
-    width: 100%;
+const SettingsButtonWrapper = styled.div`\
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    aling-items: center;
+    justify-content: center;    
+    grid-column-start: 1;
+    grid-column-end:  3;
+    padding: 30px 0px;
 `
 
 const SettingsButton = styled.button`
@@ -137,6 +140,8 @@ const SettingsButton = styled.button`
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    bottom: 10px;
+
 
     &:hover{
         opacity: 0.7;
@@ -243,7 +248,9 @@ function Settings() {
                         </SettingsForm>
                     </SettingsSection>
                 </SettingsSection>
-                <SettingsButton>Save</SettingsButton>
+                <SettingsButtonWrapper>
+                    <SettingsButton>Save</SettingsButton>
+                </SettingsButtonWrapper>
             </SettingsController>
         </SettingsWrapper>
     </Container>

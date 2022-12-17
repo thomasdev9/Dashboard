@@ -9,6 +9,8 @@ import RightBar from "./components/RightBar"
 import Customers from './components/Customers/Customers';
 import Orders from './components/Orders/Orders';
 import Settings from './components/Settings/Settings';
+import Products from './components/Products/Products';
+import SingleProduct from './components/Products/SingleProduct';
 
 const Wrapper = styled.div`
   display: grid;
@@ -32,7 +34,9 @@ function App() {
           {/* <Dashboard theme={theme}/>
           <RightBar /> */}
           {/* <Orders /> */}
-          <Settings />
+          {/* <Settings /> */}
+          {/* <Products /> */}
+          <SingleProduct />
         </Wrapper>
       </ThemeProvider>
     </div>
