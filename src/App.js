@@ -11,10 +11,16 @@ import Orders from './components/Orders/Orders';
 import Settings from './components/Settings/Settings';
 import Products from './components/Products/Products';
 import SingleProduct from './components/Products/SingleProduct';
+import Messages from './components/Messages/Messages';
 
 const Wrapper = styled.div`
+  height: 100%;
   display: grid;
   width: 96%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   gap: 1.8rem;
   grid-template-columns: 14rem auto;
@@ -36,7 +42,8 @@ function App() {
           {/* <Orders /> */}
           {/* <Settings /> */}
           {/* <Products /> */}
-          <SingleProduct />
+          <Messages />
+          {/* <SingleProduct /> */}
         </Wrapper>
       </ThemeProvider>
     </div>
