@@ -146,6 +146,7 @@ const CheckLabel = styled.label`
     display: block;
     position: relative;
     padding-left: 35px;
+    margin-right: 15px;
     font-size: 14px;
     color: #7d8da1;
     margin-bottom: 12px;
