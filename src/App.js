@@ -17,8 +17,8 @@ const Wrapper = styled.div`
   width: 96%;
   margin: 0 auto;
   gap: 1.8rem;
-  grid-template-columns: 14rem auto;
-  /* grid-template-columns: 14rem auto 23rem */;
+  /* grid-template-columns: 14rem auto */;
+  grid-template-columns: 14rem auto 23rem;
   background: ${props => props.theme.colors.background};
 `
 
@@ -31,12 +31,12 @@ function App() {
           <GlobalStyles />
           <Aside />
           {/* <Customers /> */}
-          {/* <Dashboard theme={theme}/>
-          <RightBar /> */}
+          <Dashboard theme={theme}/>
+          <RightBar />
           {/* <Orders /> */}
           {/* <Settings /> */}
           {/* <Products /> */}
-          <SingleProduct />
+          {/* <SingleProduct /> */}
         </Wrapper>
       </ThemeProvider>
     </div>
