@@ -4,6 +4,8 @@
     max-width: 75%;
     border-right: 1px solid #ebe7fb;
     position: relative;
+    scrollbar-color: #6c84ff #f1f1f1;
+    scrollbar-width: 5px;
   }
   .content__header {
     padding-bottom: 15px;

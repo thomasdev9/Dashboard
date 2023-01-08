@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom';
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -42,48 +43,52 @@ const MenuItemName = styled.h3`
 
 function Sidebar() {
   return (
-    <Wrapper>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">grid_view</span>
-            <MenuItemName>Dashboard</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">person</span>
-            <MenuItemName>Customers</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">receipt_long</span>
-            <MenuItemName>Orders</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">insights</span>
-            <MenuItemName>Analytics</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">grid_view</span>
-            <MenuItemName>Messages</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">inventory</span>
-            <MenuItemName>Products</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">report_gmailerrorred</span>
-            <MenuItemName>Reports</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">settings</span>
-            <MenuItemName>Settings</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">add</span>
-            <MenuItemName>Add Product</MenuItemName>
-        </MenuItem>
-        <MenuItem href="#">
-            <span className="material-symbols-sharp">logout</span>
-            <MenuItemName>Logout</MenuItemName>
-        </MenuItem>
-    </Wrapper>
+    <>
+        <Wrapper>
+            <MenuItem>
+                <span className="material-symbols-sharp">grid_view</span>
+                <MenuItemName>Dashboard</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">person</span>
+                <MenuItemName>Customers</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">receipt_long</span>
+                <MenuItemName>Orders</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">insights</span>
+                <MenuItemName>Analytics</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">grid_view</span>
+                <MenuItemName>Messages</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">inventory</span>
+                <MenuItemName>Products</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">report_gmailerrorred</span>
+                <MenuItemName>Reports</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">settings</span>
+                <MenuItemName>Settings</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">add</span>
+                <MenuItemName>Add Product</MenuItemName>
+            </MenuItem>
+            <MenuItem href="#">
+                <span className="material-symbols-sharp">logout</span>
+                <MenuItemName>Logout</MenuItemName>
+            </MenuItem>
+        </Wrapper>
+        <Outlet />
+    </>
+    
   )
 }
 

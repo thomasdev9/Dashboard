@@ -14,16 +14,14 @@ export default class UserProfile extends Component {
             <img src={Logo} />
           </div>
           <h4>Tech Support</h4>
-          <p>I am here to help you to find a solution</p>
+          <p>Hi, how we can help you?</p>
         </div>
         <div className="profile__card">
           <div className="card__header" onClick={this.toggleInfo}>
             <h4>Information</h4>
-            <i className="fa fa-angle-down"></i>
           </div>
           <div className="card__content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            ultrices urna a imperdiet egestas. Donec in magna quis ligula
+            We are here to help you find a solution for your problem. This is a live chat for our sellers to help them with issues related to dashboard.  
           </div>
         </div>
       </div>
